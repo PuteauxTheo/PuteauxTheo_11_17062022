@@ -1,0 +1,303 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  max-width: 1280px;
+  margin: auto;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: auto;
+}
+
+h2, h3, h4 {
+  margin: 0px;
+}
+
+p {
+  margin: 0px;
+}
+
+.container-error404 h1 {
+  font-size: 288px;
+  color: #FF6060;
+  margin: 25px auto;
+  width: fit-content;
+}
+.container-error404 .message-error {
+  color: #FF6060;
+  font-size: 35px;
+  width: fit-content;
+  margin: auto;
+}
+.container-error404 .button-back-home {
+  color: #FF6060;
+  font-size: 35px;
+  width: fit-content;
+  margin: 150px auto 50px auto;
+}
+
+footer {
+  background-color: black;
+}
+footer .container-footer {
+  display: block;
+  justify-content: center;
+  width: fit-content;
+  margin: 0px auto;
+  padding: 45px 0px;
+}
+footer .container-footer-img {
+  display: block;
+  width: fit-content;
+  margin: 0px auto;
+}
+footer .container-footer-rights {
+  color: white;
+  margin: 40px auto;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 40px 0px;
+}
+
+.menuHeader {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 60px;
+}
+.menuHeader a {
+  cursor: pointer;
+}
+.menuHeader li {
+  color: #FF6060;
+  list-style-type: none;
+}
+
+.container-infoLogement {
+  margin: 30px auto;
+}
+.container-infoLogement-presentation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.container-infoLogement-presentation-title {
+  color: #FF6060;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 142.6%;
+}
+.container-infoLogement-presentation-profile {
+  display: flex;
+  flex-direction: row;
+}
+.container-infoLogement-presentation-profile-name {
+  margin: auto 10px;
+}
+.container-infoLogement-presentation-profile-name p {
+  color: #FF6060;
+  font-size: 20px;
+  width: 90px;
+  text-align: right;
+}
+.container-infoLogement-presentation-profile-img {
+  display: flex;
+  height: 64px;
+  width: 64px;
+  margin: auto;
+}
+.container-infoLogement-presentation-profile-img img {
+  object-fit: contain;
+}
+.container-infoLogement-city {
+  color: #FF6060;
+}
+.container-infoLogement-filter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 15px auto;
+}
+.container-infoLogement-filter-tag {
+  display: flex;
+  color: white;
+  background-color: #FF6060;
+  height: 30px;
+  width: 100px;
+  border-radius: 10px;
+}
+.container-infoLogement-filter-tag span {
+  display: block;
+  margin: auto;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 142.6%;
+}
+.container-infoLogement-filter-star {
+  color: #FF6060;
+}
+.container-infoLogement-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 50px;
+  margin: 0px;
+  padding: 0px;
+}
+.container-infoLogement-list-content {
+  list-style-type: none;
+}
+.container-infoLogement-list-content-title {
+  display: flex;
+  height: 50px;
+  background-color: #FF6060;
+  color: white;
+  border-radius: 10px;
+  justify-content: space-between;
+  margin: auto 10px;
+}
+.container-infoLogement-list-content-title h4 {
+  display: block;
+  margin: 15px;
+}
+.container-infoLogement-list-content-title img {
+  margin: 15px;
+}
+.container-infoLogement-list-content-text {
+  display: flex;
+  background-color: hsba(0, 0%, 97%, 1);
+}
+.container-infoLogement-list-content-text p {
+  color: #FF6060;
+  margin: 15px;
+}
+.container-infoLogement-list-content {
+  list-style-type: none;
+}
+.container-infoLogement-list-content-title {
+  display: flex;
+  height: 50px;
+  background-color: #FF6060;
+  color: white;
+  border-radius: 10px;
+  justify-content: space-between;
+  margin: auto 10px;
+}
+.container-infoLogement-list-content-title h4 {
+  display: block;
+  margin: 15px;
+}
+.container-infoLogement-list-content-title img {
+  margin: 15px;
+}
+.container-infoLogement-list-content-text {
+  display: flex;
+  background-color: hsba(0, 0%, 97%, 1);
+}
+.container-infoLogement-list-content-text p {
+  color: #FF6060;
+  margin: 15px;
+}
+
+.container-location {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 25px;
+  gap: 25px;
+  background-color: hsba(0, 0%, 97%, 1);
+}
+.container-location-article {
+  height: 340px;
+  width: 340px;
+  background-color: #FF6060;
+  border-radius: 5px;
+  margin: 25px auto;
+}
+.container-location-article-title {
+  color: white;
+  position: relative;
+  top: 250px;
+  left: 10px;
+  width: 100px;
+}
+
+.container-about-bgAbout {
+  border-radius: 5px;
+}
+.container-about-bgAbout img {
+  border-radius: inherit;
+  width: -webkit-fill-available;
+}
+.container-about-list {
+  list-style-type: none;
+  display: block;
+  padding: 0px;
+  margin: 0px;
+}
+.container-about-list-content-title {
+  display: flex;
+  height: 50px;
+  background-color: #FF6060;
+  color: white;
+  border-radius: 10px;
+  justify-content: space-between;
+  margin: auto 10px;
+}
+.container-about-list-content-title h2 {
+  display: block;
+  margin: 15px;
+  font-size: 15px;
+}
+.container-about-list-content-title img {
+  margin: 15px;
+}
+.container-about-list-content-text {
+  display: flex;
+  background-color: hsba(0, 0%, 97%, 1);
+}
+.container-about-list-content-text p {
+  color: #FF6060;
+  margin: 15px;
+}
+
+.container-ficheLogement .bgFicheLogement {
+  border-radius: 5px;
+}
+.container-ficheLogement .bgFicheLogement img {
+  border-radius: inherit;
+  width: -webkit-fill-available;
+}
+
+.container-home-bannerHome {
+  border-radius: 25px;
+  position: relative;
+}
+.container-home-bannerHome img {
+  border-radius: inherit;
+  width: -webkit-fill-available;
+}
+.container-home-bannerHome-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 48px;
+  color: white;
+  margin: 0px;
+}
+
+/*# sourceMappingURL=style.css.map */
