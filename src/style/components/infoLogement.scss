@@ -1,4 +1,5 @@
 @import '../index.scss';
+
 .container-infoLogement{
     .infoLogement-presentation{
         display: flex;
@@ -22,7 +23,7 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        .infoLogement-filter-tag{
+        &-tag{
             display: flex;
             color: white;
             background-color: $colorKasa;
@@ -35,8 +36,8 @@
             }
         }
         
-        .infoLogement-filter-star{
-
+        &-star{
+            color: $colorKasa;
         }
         
     }
