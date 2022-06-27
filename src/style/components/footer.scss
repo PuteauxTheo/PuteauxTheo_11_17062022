@@ -7,13 +7,13 @@ footer{
         margin: 0px auto;
         padding: 45px 0px;
         
-        .img-footer{
+        &-img{
             display: block;
             width: fit-content;
             margin: 0px auto;
         }
     
-        p{
+        &-rights{
             color: white;
             margin: 40px auto;
         }

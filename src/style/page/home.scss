@@ -1,18 +1,21 @@
 
 .container-home{
-    .bgHome{
-        border-radius: 5px;
+    &-bannerHome{
+        border-radius: 25px;
         position: relative;
         img{
             border-radius: inherit;
             width: -webkit-fill-available;
 
         }
-        .bgHome-text{
+        &-text{
             position: absolute;
             top: 50%;
             left:50%;
-            object-position: 50% 50%;
+            transform: translate(-50%,-50%);
+            font-size: 48px;
+            color: white;
+            margin: 0px;
         }
 
     }
