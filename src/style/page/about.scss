@@ -1,0 +1,35 @@
+@import '../index.scss';
+
+.container-about{
+    .bgAbout{
+        border-radius: 5px;
+        img{
+            border-radius: inherit;
+            width: -webkit-fill-available;
+        }
+    }
+    
+    ul{
+        list-style-type: none;
+        display: block;
+        padding: 0px;
+        margin: 0px;
+        li{
+            display: flex;
+            background-color: $colorKasa;
+            margin: 5px 45px;
+            width: auto;
+            height: 30px;
+            border-radius: 5px;
+            
+            h2{
+                font-size: 24px;
+                color: white;
+                margin: 0px;   
+            }
+            p{
+                margin:0px
+            }
+        }
+    }
+}

@@ -1,0 +1,21 @@
+@import "./index.scss";
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 40px 0px;
+}
+.menuHeader{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
+    a{
+        cursor: pointer;
+    }
+    li{
+        color: $colorKasa; 
+        list-style-type: none;
+    }
+    
+  }

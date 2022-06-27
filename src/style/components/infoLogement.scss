@@ -1,0 +1,80 @@
+@import '../index.scss';
+.container-infoLogement{
+    .infoLogement-presentation{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        h3{
+            color: $colorKasa;
+            font-size: 36px;
+        }
+        .infoLogement-name{
+            p{
+                color: $colorKasa;
+            }
+        }
+    }
+    .infoLogement-city{
+        color: $colorKasa;
+    }
+
+    .infoLogement-filter{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .infoLogement-filter-tag{
+            display: flex;
+            color: white;
+            background-color: $colorKasa;
+            height: 30px;
+            width: 70px;
+            border-radius: 10px;
+            span{
+                display: block;
+                margin: auto;
+            }
+        }
+        
+        .infoLogement-filter-star{
+
+        }
+        
+    }
+
+    .infoLogement-list{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap:50px;
+        margin: 0px;
+        padding: 0px;
+        .infoLogement-list-description{
+            list-style-type: none;
+            div{
+                display: flex;
+                height: 50px;
+                background-color: $colorKasa;
+                color: white;
+                border-radius: 10px;
+                h4{
+                    display: block;
+                    margin: auto 10px;
+                }
+            }
+
+        }
+        .infoLogement-list-equipements{
+            list-style-type: none;
+            div{
+                display: flex;
+                height: 50px;
+                background-color: $colorKasa;
+                color: white;
+                border-radius: 10px;
+                h4{
+                    display: block;
+                    margin: auto 10px;
+                }
+            }
+        }
+    }
+}

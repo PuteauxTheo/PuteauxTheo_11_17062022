@@ -1,0 +1,29 @@
+@import "./index.scss";
+
+$bgFooter: black;
+
+footer{
+    background-color: $bgFooter;
+    .container-footer{
+        display: block;
+        justify-content: center;
+        width: fit-content;
+        margin: 0px auto;
+        padding: 45px 0px;
+        
+        .img-footer{
+            display: block;
+            width: fit-content;
+            margin: 0px auto;
+        }
+    
+        p{
+            color: white;
+            margin: 40px auto;
+        }
+    
+    
+    } 
+}
+
+

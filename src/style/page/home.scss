@@ -1,0 +1,19 @@
+
+.container-home{
+    .bgHome{
+        border-radius: 5px;
+        position: relative;
+        img{
+            border-radius: inherit;
+            width: -webkit-fill-available;
+
+        }
+        .bgHome-text{
+            position: absolute;
+            top: 50%;
+            left:50%;
+            object-position: 50% 50%;
+        }
+
+    }
+}
