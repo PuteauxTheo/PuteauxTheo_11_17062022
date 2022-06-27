@@ -4,9 +4,9 @@ import bgHome from "../../assets/bgHome.jpg"
 function Home() {
     return( 
         <div className="container-home">
-            <div className="bgHome">
+            <div className="container-home-bannerHome">
                 <img src={bgHome} alt="mer avec des rochers "/>
-                <p className="bgHome-text">Chez vous, partout ailleurs</p>
+                <p className="container-home-bannerHome-text">Chez vous, partout ailleurs</p>
             </div>
             <Location/>
         </div>
