@@ -1,14 +1,7 @@
 import React from 'react'
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import './style/index.scss';
-import './style/header.scss';
-import './style/footer.scss'
-import './style/components/location.scss'
-import './style/components/error404.scss'
-import './style/page/home.scss'
-import './style/page/about.scss'
-import './style/components/infoLogement.scss'
+import './style/main.scss'
 import Header from './components/Header';
 import Home from './pages/Home'
 import About from './pages/About'
