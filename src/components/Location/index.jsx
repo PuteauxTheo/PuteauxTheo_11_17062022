@@ -3,19 +3,19 @@ import { Link } from "react-router-dom"
 function Location() {
     return (
         <div className="container-location">
-            <article className="article-location">
+            <article className="container-location-article">
                 <Link to="location">
-                    <h3 className="title-location"> Titre de la Location</h3>
+                    <h3 className="container-location-article-title"> Titre de la Location</h3>
                 </Link>
             </article>
-            <article className="article-location">
+            <article className="container-location-article">
                 <Link to="/location">
-                    <h3 className="title-location"> Titre de la Location</h3>
+                    <h3 className="container-location-article-title"> Titre de la Location</h3>
                 </Link>            
             </article>
-            <article className="article-location">
+            <article className="container-location-article">
                 <Link to="/location">
-                    <h3 className="title-location"> Titre de la Location</h3>
+                    <h3 className="container-location-article-title"> Titre de la Location</h3>
                 </Link>
             </article>
         </div>
