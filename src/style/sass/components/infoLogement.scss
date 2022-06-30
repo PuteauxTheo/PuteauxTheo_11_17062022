@@ -99,12 +99,26 @@
             }
             &-text{
                 display: flex;
+                flex-direction: column;
                 background-color: hsba(0, 0%, 97%, 1);
-                p{
+
+                .description-text{
                     color:$colorKasa;
-                    margin: 15px;
+                    margin: 5px 25px;
+                }
+                .description-text:first-child{
+                    margin-top: 15px;
+                }
+
+                .equipement-text{
+                    color:$colorKasa;
+                    margin: 5px 25px;
+                }
+                .equipement-text:first-child{
+                    margin-top: 15px;
                 }
             }
+            
 
         }
     }
