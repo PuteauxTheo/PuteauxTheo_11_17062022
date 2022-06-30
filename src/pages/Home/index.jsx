@@ -6,7 +6,7 @@ function Home() {
         <div className="container-home">
             <div className="container-home-bannerHome">
                 <img src={bgHome} alt="mer avec des rochers "/>
-                <p className="container-home-bannerHome-text">Chez vous, partout ailleurs</p>
+                <p className="container-home-bannerHome-text">Chez vous, partout et ailleurs</p>
             </div>
             <Location/>
         </div>
