@@ -4,19 +4,35 @@
     margin: 25px;
     gap: 25px;
     background-color: hsba(0, 0%, 97%, 1);
-    &-article{
+    
+    &-link{
+        display: flex;
         height: 340px;
         width: 340px;
         background-color: $colorKasa;
         border-radius: 5px;
         margin: 25px auto;
+        position: relative;
+        &-cover{
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+            border-radius: 5px;
+        }
+        &-gradient{
+            border-radius: 5px;
+            height: 340px;
+            width: 340px;
+            position: absolute;
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+        }
         &-title{
+            z-index: 10;
             color: white;
-            position: relative;
-            top: 250px;
-            left: 10px;
-            width: 100px;
+            position: absolute;
+            width: 300px;
+            bottom: 20px;
+            left: 20px;
         }
     }
 }
-

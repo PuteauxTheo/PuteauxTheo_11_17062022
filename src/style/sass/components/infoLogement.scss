@@ -1,3 +1,5 @@
+// infoLogement.scss
+
 .container-infoLogement{
     margin: 30px auto;
     &-presentation{
@@ -104,33 +106,6 @@
                 }
             }
 
-        }
-        &-content{
-            list-style-type: none;
-            &-title{
-                display: flex;
-                height: 50px;
-                background-color: $colorKasa;
-                color: white;
-                border-radius: 10px;
-                justify-content: space-between;
-                margin: auto 10px;
-                h4{
-                    display: block;
-                    margin: 15px;
-                }
-                img{
-                    margin: 15px;
-                }
-            }
-            &-text{
-                display: flex;
-                background-color: hsba(0, 0%, 97%, 1);
-                p{
-                    color:$colorKasa;
-                    margin: 15px;
-                }
-            }
         }
     }
 }
