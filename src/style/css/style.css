@@ -179,11 +179,22 @@ header {
 }
 .container-infoLogement-list-content-text {
   display: flex;
+  flex-direction: column;
   background-color: hsba(0, 0%, 97%, 1);
 }
-.container-infoLogement-list-content-text p {
+.container-infoLogement-list-content-text .description-text {
   color: #FF6060;
-  margin: 15px;
+  margin: 5px 25px;
+}
+.container-infoLogement-list-content-text .description-text:first-child {
+  margin-top: 15px;
+}
+.container-infoLogement-list-content-text .equipement-text {
+  color: #FF6060;
+  margin: 5px 25px;
+}
+.container-infoLogement-list-content-text .equipement-text:first-child {
+  margin-top: 15px;
 }
 
 .container-location {
