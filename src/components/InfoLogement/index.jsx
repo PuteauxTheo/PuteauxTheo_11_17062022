@@ -37,7 +37,7 @@ function InfoLogement({ location }) {
                 </div>
                 
             </div>
-            <ul className="container-infoLogement-list">
+            <ul className="container-dropDown-list">
                 <Dropdown dropDownTitle="Description">
                     <p className="description-text">{location.description}</p>
                 </Dropdown>
