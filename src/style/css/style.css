@@ -151,17 +151,17 @@ header {
 .container-infoLogement-filter-star {
   color: #FF6060;
 }
-.container-infoLogement-list {
+.container-infoLogement .container-dropDown-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 50px;
   margin: 0px;
   padding: 0px;
 }
-.container-infoLogement-list-content {
+.container-infoLogement .container-dropDown-list-content {
   list-style-type: none;
 }
-.container-infoLogement-list-content-title {
+.container-infoLogement .container-dropDown-list-content-title {
   display: flex;
   height: 50px;
   background-color: #FF6060;
@@ -170,30 +170,30 @@ header {
   justify-content: space-between;
   margin: auto 10px;
 }
-.container-infoLogement-list-content-title h4 {
+.container-infoLogement .container-dropDown-list-content-title h4 {
   display: block;
   margin: 15px;
 }
-.container-infoLogement-list-content-title img {
+.container-infoLogement .container-dropDown-list-content-title img {
   margin: 15px;
 }
-.container-infoLogement-list-content-text {
+.container-infoLogement .container-dropDown-list-content-text {
   display: flex;
   flex-direction: column;
   background-color: hsba(0, 0%, 97%, 1);
 }
-.container-infoLogement-list-content-text .description-text {
+.container-infoLogement .container-dropDown-list-content-text .description-text {
   color: #FF6060;
   margin: 5px 25px;
 }
-.container-infoLogement-list-content-text .description-text:first-child {
+.container-infoLogement .container-dropDown-list-content-text .description-text:first-child {
   margin-top: 15px;
 }
-.container-infoLogement-list-content-text .equipement-text {
+.container-infoLogement .container-dropDown-list-content-text .equipement-text {
   color: #FF6060;
   margin: 5px 25px;
 }
-.container-infoLogement-list-content-text .equipement-text:first-child {
+.container-infoLogement .container-dropDown-list-content-text .equipement-text:first-child {
   margin-top: 15px;
 }
 
@@ -209,7 +209,7 @@ header {
   height: 340px;
   width: 340px;
   background-color: #FF6060;
-  border-radius: 5px;
+  border-radius: 10px;
   margin: 25px auto;
   position: relative;
 }
@@ -236,7 +236,7 @@ header {
 }
 
 .container-about-bgAbout {
-  border-radius: 5px;
+  border-radius: 25px;
 }
 .container-about-bgAbout img {
   border-radius: inherit;
@@ -248,30 +248,40 @@ header {
   padding: 0px;
   margin: 0px;
 }
-.container-about-list-content-title {
+.container-about-list .container-dropDown-list-content {
+  margin: 30px 0px;
+}
+.container-about-list .container-dropDown-list-content-title {
   display: flex;
   height: 50px;
   background-color: #FF6060;
   color: white;
   border-radius: 10px;
   justify-content: space-between;
-  margin: auto 10px;
+  margin: auto 50px;
+  z-index: 10;
+  position: relative;
 }
-.container-about-list-content-title h2 {
+.container-about-list .container-dropDown-list-content-title h4 {
   display: block;
-  margin: 15px;
-  font-size: 15px;
+  margin: auto 15px;
+  font-size: 24px;
 }
-.container-about-list-content-title img {
+.container-about-list .container-dropDown-list-content-title img {
   margin: 15px;
 }
-.container-about-list-content-text {
+.container-about-list .container-dropDown-list-content-text {
   display: flex;
-  background-color: hsba(0, 0%, 97%, 1);
+  background-color: #f7f7f7;
+  border-radius: 0px 0px 5px 5px;
+  margin: -10px 50px 15px 50px;
+  z-index: 1;
 }
-.container-about-list-content-text p {
+.container-about-list .container-dropDown-list-content-text p {
   color: #FF6060;
-  margin: 15px;
+  margin: 15px 5px 10px 5px;
+  z-index: 1;
+  font-size: 24px;
 }
 
 .container-ficheLogement .bgFicheLogement {
