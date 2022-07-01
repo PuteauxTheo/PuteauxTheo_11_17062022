@@ -1,5 +1,5 @@
 import { useParams } from 'react-router-dom'
-import bgFicheLogement from '../../assets/bgFicheLogement.jpg'
+import Caroussel from '../../components/Caroussel';
 import InfoLogement from '../../components/InfoLogement'
 import logement from '../../data/logements.json'
 
@@ -7,14 +7,18 @@ function FicheLogement() {
 
     let id = useParams();
 
-    console.log(id)
-
     const location = logement.find( location => location.id === id.locationID )
     return (
-        <div className='container-ficheLogement'>
-            <div className='bgFicheLogement'> 
-                <img src={bgFicheLogement} alt="salon"/>
-            </div>
+        <div className='container-ficheLogement'>  
+            <div className='caroussel'>
+                <Caroussel>
+                    {
+                        location.pictures.map( (picture) => (
+                            <img key={picture} src={picture} alt="caroussel" />
+                    ))}
+                </Caroussel> 
+            </div>              
+                       
             <InfoLogement location={ location }/>
             
         </div>
