@@ -24,7 +24,9 @@ function InfoLogement({ location }) {
                 <div className="container-infoLogement-filter-tag">
                     {
                         location.tags.map( (tag) => ( 
-                            <span key={tag}>{tag}</span> 
+                            <span key={tag}>
+                                <p>{tag}</p>
+                            </span> 
                     ))}
                 </div>
                 <div>
