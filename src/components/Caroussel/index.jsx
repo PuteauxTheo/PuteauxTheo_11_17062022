@@ -12,12 +12,18 @@ function Caroussel( { children }) {
     }, [children])
 
     const next = () => {
+        if(currentIndex === (children.length - 1)) {
+            setCurrentIndex(prevState => 0)
+        }
         if (currentIndex < (length - 1)) {
             setCurrentIndex(prevState => prevState + 1)
         }
     }
     
     const prev = () => {
+        if(currentIndex === 0){
+            setCurrentIndex(prevState => prevState + (children.length - 1))
+        }
         if (currentIndex > 0) {
             setCurrentIndex(prevState => prevState - 1)
         }
