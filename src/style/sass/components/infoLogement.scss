@@ -33,6 +33,7 @@
                 margin: auto;
                 img{
                     object-fit: contain;
+                    border-radius: 75px;
                 }
             }
             
@@ -48,20 +49,28 @@
         justify-content: space-between;
         margin: 15px auto;
         &-tag{
-            display: flex;
-            color: white;
-            background-color: $colorKasa;
-            height: 30px;
-            width: 100px;
-            border-radius: 10px;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            column-gap: 10px;
             span{
                 display: block;
                 margin: auto;
-                font-family: 'Montserrat';
-                font-style: normal;
-                font-weight: 500;
-                font-size: 14px;
-                line-height: 142.6%;
+                color: white;
+                background-color: $colorKasa;
+                height: 30px;
+                min-width: 100px;
+                border-radius: 10px;
+                
+                p{
+                    display: block;
+                    text-align: center;
+                    margin: 5px auto;
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 142.6%;
+                }
             }
         }
         
