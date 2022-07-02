@@ -121,6 +121,7 @@ header {
 }
 .container-infoLogement-presentation-profile-img img {
   object-fit: contain;
+  border-radius: 75px;
 }
 .container-infoLogement-city {
   color: #FF6060;
@@ -132,16 +133,23 @@ header {
   margin: 15px auto;
 }
 .container-infoLogement-filter-tag {
-  display: flex;
-  color: white;
-  background-color: #FF6060;
-  height: 30px;
-  width: 100px;
-  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 10px;
 }
 .container-infoLogement-filter-tag span {
   display: block;
   margin: auto;
+  color: white;
+  background-color: #FF6060;
+  height: 30px;
+  min-width: 100px;
+  border-radius: 10px;
+}
+.container-infoLogement-filter-tag span p {
+  display: block;
+  text-align: center;
+  margin: 5px auto;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
