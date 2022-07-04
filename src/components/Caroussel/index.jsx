@@ -1,6 +1,7 @@
 import { useEffect } from "react"
-
 import { useState } from "react"
+import prevArrowCaroussel from "../../assets/prevArrowCaroussel.svg"
+import nextArrowCaroussel from "../../assets/nextArrowCaroussel.svg"
 
 function Caroussel( { children }) {
     const [currentIndex, setCurrentIndex] = useState(0)
@@ -32,17 +33,18 @@ function Caroussel( { children }) {
     return (
         <div className="carousel-container">
             <div className="carousel-wrapper">
-                <button onClick={prev} className="left-arrow">
-                    &lt;
-                </button>
+                <div onClick={prev} className="left-arrow">
+                    <img src={prevArrowCaroussel} alt=""/>
+                </div>
                 <div className="carousel-content-wrapper">
                     <div className="carousel-content" style={{ transform: `translateX(-${currentIndex *100}%)` }}>
                         {children}
                     </div>
+                    <div className="caroussel-content-numberPicture">{currentIndex+1}/{children.length}</div>
                 </div>
-                <button onClick={next} className="right-arrow">
-                    &gt;
-                </button>
+                <div onClick={next} className="right-arrow">
+                    <img src={nextArrowCaroussel} alt=""/>
+                </div>
             </div>
         </div>
     )
