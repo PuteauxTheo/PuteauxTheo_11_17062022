@@ -32,7 +32,7 @@ function InfoLogement({ location }) {
                 <div>
                     {
                         starTab.map(( el ) => (
-                            location.rating >= el ? <img key={el+"full"} src={starFull} alt="etoile rempli"/> : <img key={el+"empty"} src={starEmpty} alt="etoile vide"/>
+                            location.rating >= el ? <img className="container-infoLogement-filter-star"key={el+"full"} src={starFull} alt="etoile rempli"/> : <img key={el+"empty"} src={starEmpty} alt="etoile vide"/>
                         ))
                     }
 
