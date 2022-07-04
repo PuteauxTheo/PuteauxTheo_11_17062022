@@ -17,6 +17,16 @@
             width: -webkit-fill-available;
 
         }
+        &-bg{
+            background-color: black;
+            mix-blend-mode: darken;
+            opacity: 0.3;
+            border-radius: 25px;
+            height: 98%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+        }
         &-text{
             position: absolute;
             top: 50%;

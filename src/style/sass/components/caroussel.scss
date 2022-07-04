@@ -70,8 +70,10 @@
     z-index: 1;
     top: 50%;
     transform: translateY(-50%);
-    & img{
-        height: 20px;
+    @media screen and (max-width: 767px) {
+        & img{
+            height: 20px;
+        }        
     }
 }
 

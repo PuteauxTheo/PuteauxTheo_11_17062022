@@ -3,22 +3,33 @@ header{
     flex-direction: row;
     justify-content: space-between;
     margin: 40px 0px;
-    @media screen and (max-width: 767px) {
-        height: 47px;
-        width: 145px;
+    
+    nav{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        .menuImg{
+            @media screen and (max-width: 767px) {
+                height: 47px;
+                width: 145px;
+            }
+        }
+        .menuHeader{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 10px;
+            width: max-content;
+            a{
+                cursor: pointer;
+            }
+            li{
+                color: $colorKasa; 
+                list-style-type: none;
+                @media screen and (max-width: 767px) {
+                    text-transform: uppercase;
+                }
+            }
+            
+          }
     }
 }
-.menuHeader{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 60px;
-    max-width: max-content;
-    a{
-        cursor: pointer;
-    }
-    li{
-        color: $colorKasa; 
-        list-style-type: none;
-    }
-    
-  }
