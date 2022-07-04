@@ -2,8 +2,13 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin: 25px;
+    @media screen and (max-width: 767px) {
+        margin: 20px auto;                   
+    }
     gap: 25px;
-    background-color: hsba(0, 0%, 97%, 1);
+    @media screen and (max-width: 767px) {
+        grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+    }
     
     &-link{
         display: flex;
