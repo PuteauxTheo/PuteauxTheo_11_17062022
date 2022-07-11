@@ -1,11 +1,22 @@
 import { useParams } from 'react-router-dom'
+import { useState } from 'react';
 // import { useState, useEffect } from 'react'
 import Caroussel from '../../components/Caroussel';
 import InfoLogement from '../../components/InfoLogement'
-import logements from '../../data/logements.json'
+import getData from '../../service/serviceMock';
 
 function FicheLogement() {
 
+    let id = useParams();
+    const [dataLogement, setDataLogements] = useState();
+    
+    getData(id)
+    .then(data => {
+        getData(id)
+            .then(data => setDataLogements)
+            .catch(err => console.log("erreur lors de la recuperation des données", err))
+    })
+    console.log(dataLogement)
     // const [dataLogements, setDataLogements] = useState([]);
     // console.log(dataLogements);     
     // const getDataLogements = () =>{
@@ -21,22 +32,19 @@ function FicheLogement() {
     //     getDataLogements()
     // }, []);
 
-    let id = useParams();
-    // console.log(dataLogements.length)
-    // const logement = dataLogements.find( logement => logement.id === id.logementID )
-    const logement = logements.find( logement => logement.id === id.logementID )
+    
     return (
         <div className='container-ficheLogement'>  
             <div className='caroussel'>
                 <Caroussel>
                     {
-                        logement.pictures.map( (picture) => (
+                        dataLogement.pictures.map( (picture) => (
                             <img key={picture} src={picture} alt="caroussel" />
                     ))}
                 </Caroussel> 
             </div>              
                        
-            <InfoLogement logement={ logement }/>
+            <InfoLogement logement={ dataLogement }/>
             
         </div>
     )
