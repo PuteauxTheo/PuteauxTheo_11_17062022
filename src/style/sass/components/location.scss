@@ -2,18 +2,23 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin: 25px;
-    @media screen and (max-width: 767px) {
-        margin: 20px auto;                   
-    }
     gap: 25px;
     @media screen and (max-width: 767px) {
         grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+        margin: 10px auto; 
+        gap:0px;
+
     }
     
     &-link{
         display: flex;
         height: 340px;
         width: 340px;
+        @media screen and (max-width: 767px) {
+            height: 255px;
+            width: 335px; 
+            margin: 15px auto;             
+        }
         background-color: $colorKasa;
         border-radius: 10px;
         margin: 25px auto;
@@ -28,6 +33,10 @@
             border-radius: 5px;
             height: 340px;
             width: 340px;
+            @media screen and (max-width: 767px) {
+                height: 255px;
+                width: 335px;              
+            }
             position: absolute;
             background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
         }

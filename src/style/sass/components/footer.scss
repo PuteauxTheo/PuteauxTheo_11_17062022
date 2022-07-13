@@ -1,31 +1,36 @@
 footer{
     background-color: $bgFooter;
-    .container-footer{
-        display: block;
-        justify-content: center;
-        width: fit-content;
-        margin: 0px auto;
-        padding: 45px 0px;
-        
-        &-img{
+    .container{
+        max-width: 1280px;
+        margin: auto;
+        .container-footer{
             display: block;
+            justify-content: center;
             width: fit-content;
             margin: 0px auto;
-            @media screen and (max-width: 767px) {
-                width: 122px;           
+            padding: 45px 0px;
+            
+            &-img{
+                display: block;
+                width: fit-content;
+                margin: 0px auto;
+                @media screen and (max-width: 767px) {
+                    width: 122px;           
+                }
             }
-        }
-    
-        &-rights{
-            color: white;
-            margin: 40px auto;
-            @media screen and (max-width: 767px) {
-                font-size: 12px;           
+        
+            &-rights{
+                color: white;
+                margin: 40px auto;
+                @media screen and (max-width: 767px) {
+                    font-size: 12px;           
+                }
             }
-        }
+        
+        
+        } 
+    }
     
-    
-    } 
 }
 
 

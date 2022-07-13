@@ -1,5 +1,10 @@
 
 .container-home{
+    max-width: 1280px;
+    margin: auto;
+    @media screen and (max-width: 767px) {
+        margin: 20px 10px;
+    }
     &-bannerHome{
         @media screen and (max-width: 767px) {
             border-radius: 10px;
@@ -22,6 +27,9 @@
             mix-blend-mode: darken;
             opacity: 0.3;
             border-radius: 25px;
+            @media screen and (max-width: 767px) {
+                border-radius: 10px;
+            }
             height: 98%;
             width: 100%;
             position: absolute;
