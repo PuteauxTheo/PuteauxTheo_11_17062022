@@ -28,18 +28,46 @@ p {
   color: #FF6060;
   margin: 25px auto;
   width: fit-content;
+  font-family: "Montserrat";
+  font-style: normal;
+}
+@media screen and (max-width: 767px) {
+  .container-error404 h1 {
+    font-size: 96px;
+    margin: 200px auto 50px auto;
+  }
 }
 .container-error404 .message-error {
   color: #FF6060;
   font-size: 35px;
   width: fit-content;
   margin: auto;
+  font-family: "Montserrat";
+  font-style: normal;
+}
+@media screen and (max-width: 767px) {
+  .container-error404 .message-error {
+    font-size: 18px;
+    margin: auto;
+    width: 70%;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+  }
 }
 .container-error404 .button-back-home {
+  font-family: "Montserrat";
+  font-style: normal;
   color: #FF6060;
   font-size: 35px;
   width: fit-content;
   margin: 150px auto 50px auto;
+  text-decoration: underline;
+}
+@media screen and (max-width: 767px) {
+  .container-error404 .button-back-home {
+    font-size: 14px;
+  }
 }
 
 footer {
@@ -685,6 +713,7 @@ header nav .menuHeader li {
 @media screen and (max-width: 767px) {
   .container-home-bannerHome-text {
     font-size: 24px;
+    width: 53%;
   }
 }
 
