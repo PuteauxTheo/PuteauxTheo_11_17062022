@@ -1,37 +1,42 @@
 //import { useNavigate } from 'react-router-dom'
 import { useParams } from 'react-router-dom'
-// import { useState } from 'react';
 import Caroussel from '../../components/Caroussel';
 import InfoLogement from '../../components/InfoLogement'
-import logements from '../../data/logements.json';
-// import getData from '../../service/serviceMock.js';
-// import { useEffect } from 'react';
+// import logements from '../../data/logements.json';
+import getData from '../../service/serviceMock.js';
+import React, { useEffect, useState } from 'react';
 
 function FicheLogement() {
 
-    let id = useParams();
-    //let navigate = useNavigate();
+    const id = useParams();
+    //const navigate = useNavigate();
 
-    const dataLogement = logements.find( logement => logement.id === id.logementID )
-    // const [dataLogement, setDataLogement] = useState();
-    // useEffect(() => {
-    //     getData(id)
-    //         .then(data => setDataLogement(data))
-    //         .catch(err => console.log("erreur lors de la recuperation des données", err))
-    // })
+    
+    const [dataLogement, setDataLogement] = useState();
+
+    useEffect(() => {
+        getData(id)
+            .then(data => {setDataLogement(data)
+                console.log(data)})
+            .catch(err => console.log("erreur lors de la recuperation des données", err))
+    },[id]);
+    console.log(getData(id))
+    console.log(dataLogement)
+
+    //const dataLogement = logements.find( logement => logement.id === id.logementID )
 
     return (
         <div className='container-ficheLogement'>  
             <div className='caroussel'>
                 <Caroussel>
                     {
-                        dataLogement.pictures.map( (picture) => (
+                        dataLogement.data.pictures.map( (picture) => (
                             <img key={picture} src={picture} alt="caroussel" />
                     ))}
                 </Caroussel> 
             </div>              
                        
-            <InfoLogement logement={ dataLogement }/>
+            <InfoLogement logement={ dataLogement.data }/>
             
         </div>
     )
