@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/PuteauxTheo_11_17062022/static/css/main.2d39d958.css",
-    "main.js": "/PuteauxTheo_11_17062022/static/js/main.3069a423.js",
+    "main.js": "/PuteauxTheo_11_17062022/static/js/main.b3af8aaf.js",
     "static/media/bgAbout.jpg": "/PuteauxTheo_11_17062022/static/media/bgAbout.96ba68b2b24837424fa9.jpg",
     "static/media/bgHome.jpg": "/PuteauxTheo_11_17062022/static/media/bgHome.053687a54587bf187cfc.jpg",
     "index.html": "/PuteauxTheo_11_17062022/index.html",
@@ -12,10 +12,10 @@
     "static/media/starEmpty.svg": "/PuteauxTheo_11_17062022/static/media/starEmpty.06dccca447400012db124c595a41e219.svg",
     "static/media/starFull.svg": "/PuteauxTheo_11_17062022/static/media/starFull.325cf1d54d109e062e0d0468f6412f00.svg",
     "main.2d39d958.css.map": "/PuteauxTheo_11_17062022/static/css/main.2d39d958.css.map",
-    "main.3069a423.js.map": "/PuteauxTheo_11_17062022/static/js/main.3069a423.js.map"
+    "main.b3af8aaf.js.map": "/PuteauxTheo_11_17062022/static/js/main.b3af8aaf.js.map"
   },
   "entrypoints": [
     "static/css/main.2d39d958.css",
-    "static/js/main.3069a423.js"
+    "static/js/main.b3af8aaf.js"
   ]
 }
