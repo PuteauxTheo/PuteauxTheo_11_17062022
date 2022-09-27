@@ -9,7 +9,6 @@ import React, { useEffect, useState } from 'react';
 function FicheLogement() {
 
     const id = useParams();
-    //const navigate = useNavigate();
 
     
     const [dataLogement, setDataLogement] = useState();
@@ -20,10 +19,11 @@ function FicheLogement() {
                 console.log(data)})
             .catch(err => console.log("erreur lors de la recuperation des données", err))
     },[id]);
-    console.log(getData(id))
-    console.log(dataLogement)
 
-    //const dataLogement = logements.find( logement => logement.id === id.logementID )
+    if(!dataLogement){
+        return null;
+    }
+
 
     return (
         <div className='container-ficheLogement'>  
